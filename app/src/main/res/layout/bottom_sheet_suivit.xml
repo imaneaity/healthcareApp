@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/TittreData"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/actualisersuivit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/actualisersuivit"
+                android:background="@drawable/white_book_icon"
+                android:src="@drawable/ic_autorenew_black_24dp" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lisSuivitPat"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/darker_gray"
+                android:padding="4dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/plusData"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10sp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/plusData"
+                android:layout_alignBottom="@+id/plusData"
+                android:layout_marginLeft="2sp"
+                android:layout_marginTop="2sp"
+                android:background="@drawable/white_book_icon"
+                android:src="@drawable/ic_add_circle_outline_green_24dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/button_graphe"
+            android:text="CLOSE"
+            android:textColor="@color/darkblue"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button_graphe"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="graphe"
+            android:textColor="@color/darkblue"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</LinearLayout>
